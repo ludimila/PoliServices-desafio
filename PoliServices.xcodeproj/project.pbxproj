@@ -20,6 +20,8 @@
 		936404BC2997A79200031C7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404BB2997A79200031C7A /* Constants.swift */; };
 		936404C22997AA5A00031C7A /* SelectedServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404C12997AA5A00031C7A /* SelectedServiceModel.swift */; };
 		936404C62997AC2700031C7A /* SelectServiceDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404C52997AC2700031C7A /* SelectServiceDateViewModel.swift */; };
+		9364050A2997CFD300031C7A /* NewServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936405092997CFD300031C7A /* NewServiceViewModel.swift */; };
+		9364050C2997D04400031C7A /* NewServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9364050B2997D04400031C7A /* NewServiceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		936404BB2997A79200031C7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		936404C12997AA5A00031C7A /* SelectedServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedServiceModel.swift; sourceTree = "<group>"; };
 		936404C52997AC2700031C7A /* SelectServiceDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServiceDateViewModel.swift; sourceTree = "<group>"; };
+		936405092997CFD300031C7A /* NewServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewServiceViewModel.swift; sourceTree = "<group>"; };
+		9364050B2997D04400031C7A /* NewServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewServiceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +140,8 @@
 		936404C32997AC0400031C7A /* SelectDate */ = {
 			isa = PBXGroup;
 			children = (
+				9364050D2997D78900031C7A /* Views */,
 				936404C12997AA5A00031C7A /* SelectedServiceModel.swift */,
-				4C30F0A729391842002C3068 /* SelectServiceDateViewController.swift */,
 				936404C52997AC2700031C7A /* SelectServiceDateViewModel.swift */,
 			);
 			path = SelectDate;
@@ -146,10 +150,28 @@
 		936405062997CA1800031C7A /* NewService */ = {
 			isa = PBXGroup;
 			children = (
-				4C30F0A529390FC6002C3068 /* ServiceCollectionViewCell.swift */,
-				4C5503582937D32A00699589 /* NewServiceViewController.swift */,
+				936405072997CFB100031C7A /* Views */,
+				9364050B2997D04400031C7A /* NewServiceModel.swift */,
+				936405092997CFD300031C7A /* NewServiceViewModel.swift */,
 			);
 			path = NewService;
+			sourceTree = "<group>";
+		};
+		936405072997CFB100031C7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C5503582937D32A00699589 /* NewServiceViewController.swift */,
+				4C30F0A529390FC6002C3068 /* ServiceCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9364050D2997D78900031C7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C30F0A729391842002C3068 /* SelectServiceDateViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9364050C2997D04400031C7A /* NewServiceModel.swift in Sources */,
 				936404C62997AC2700031C7A /* SelectServiceDateViewModel.swift in Sources */,
 				936404B929979C8200031C7A /* DataStore.swift in Sources */,
 				4C30F0A829391842002C3068 /* SelectServiceDateViewController.swift in Sources */,
@@ -233,6 +256,7 @@
 				4C55034529379F3600699589 /* AppDelegate.swift in Sources */,
 				4C5503592937D32A00699589 /* NewServiceViewController.swift in Sources */,
 				4C55034729379F3600699589 /* SceneDelegate.swift in Sources */,
+				9364050A2997CFD300031C7A /* NewServiceViewModel.swift in Sources */,
 				936404BC2997A79200031C7A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
