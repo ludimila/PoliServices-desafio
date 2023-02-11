@@ -28,7 +28,7 @@ class SelectServiceDateViewController: UIViewController {
     
     @IBAction func createNewService(_ sender: Any) {
         let date = datePicker.date.timeIntervalSince1970
-        viewModel.saveNewService(with: serviceName, and: date)
+        viewModel.saveService(with: serviceName, and: date)
         dismiss(animated: true)
     }
 }

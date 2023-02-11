@@ -1,14 +1,14 @@
 import Foundation
 
 protocol SelectServiceDateViewModelProtocol {
-    func saveNewService(with name: String?, and date: Double)
+    func saveService(with name: String?, and date: Double)
     func selectDate() -> Date
 }
 
 final class SelectServiceDateViewModel: SelectServiceDateViewModelProtocol {
     private let dataStore = DataStore.shared
     
-    func saveNewService(with name: String?, and date: Double) {
+    func saveService(with name: String?, and date: Double) {
         let service = Service(name: name, date: date)
         dataStore.save(service.name, forKey: Constants.serviceName.rawValue)
         dataStore.save(service.date, forKey: Constants.serviceDate.rawValue)
