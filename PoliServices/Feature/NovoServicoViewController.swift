@@ -67,7 +67,7 @@ class NewServiceViewController: UIViewController, UICollectionViewDelegate, UICo
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        (segue.destination as! SelectDateViewController).serviceName = nome
+        (segue.destination as! SelectServiceDateViewController).serviceName = nome
     }
 
 }

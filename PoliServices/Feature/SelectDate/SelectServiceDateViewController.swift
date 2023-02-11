@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-class SelectDateViewController: UIViewController {
-
+class SelectServiceDateViewController: UIViewController {
+    
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var salvar: UIBarButtonItem!
-
+    
     var serviceName: String?
     var viewModel = SelectServiceDateViewModel()
     
@@ -25,11 +25,10 @@ class SelectDateViewController: UIViewController {
         datePicker.minimumDate = Date()
         datePicker.date = viewModel.selectDate()
     }
-
-    @IBAction func clicou(_ sender: Any) {
+    
+    @IBAction func createNewService(_ sender: Any) {
         let date = datePicker.date.timeIntervalSince1970
-        viewModel.saveNewService(with: serviceName, and: datePicker.date.timeIntervalSince1970)
+        viewModel.saveNewService(with: serviceName, and: date)
         dismiss(animated: true)
     }
-
 }

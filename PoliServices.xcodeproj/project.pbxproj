@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C30F0A629390FC6002C3068 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C30F0A529390FC6002C3068 /* ServiceCollectionViewCell.swift */; };
-		4C30F0A829391842002C3068 /* SelectDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C30F0A729391842002C3068 /* SelectDateViewController.swift */; };
+		4C30F0A829391842002C3068 /* SelectServiceDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C30F0A729391842002C3068 /* SelectServiceDateViewController.swift */; };
 		4C55034529379F3600699589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55034429379F3600699589 /* AppDelegate.swift */; };
 		4C55034729379F3600699589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55034629379F3600699589 /* SceneDelegate.swift */; };
 		4C55034929379F3600699589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55034829379F3600699589 /* ViewController.swift */; };
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		4C30F0A529390FC6002C3068 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
-		4C30F0A729391842002C3068 /* SelectDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateViewController.swift; sourceTree = "<group>"; };
+		4C30F0A729391842002C3068 /* SelectServiceDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServiceDateViewController.swift; sourceTree = "<group>"; };
 		4C55034129379F3600699589 /* PoliServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoliServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C55034429379F3600699589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C55034629379F3600699589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		936404C32997AC0400031C7A /* SelectDate */ = {
 			isa = PBXGroup;
 			children = (
-				4C30F0A729391842002C3068 /* SelectDateViewController.swift */,
+				4C30F0A729391842002C3068 /* SelectServiceDateViewController.swift */,
 				936404C52997AC2700031C7A /* SelectServiceDateViewModel.swift */,
 			);
 			path = SelectDate;
@@ -218,7 +218,7 @@
 			files = (
 				936404C62997AC2700031C7A /* SelectServiceDateViewModel.swift in Sources */,
 				936404B929979C8200031C7A /* DataStore.swift in Sources */,
-				4C30F0A829391842002C3068 /* SelectDateViewController.swift in Sources */,
+				4C30F0A829391842002C3068 /* SelectServiceDateViewController.swift in Sources */,
 				936404C22997AA5A00031C7A /* ServiceModel.swift in Sources */,
 				4C30F0A629390FC6002C3068 /* ServiceCollectionViewCell.swift in Sources */,
 				4C55034929379F3600699589 /* ViewController.swift in Sources */,

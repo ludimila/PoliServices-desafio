@@ -295,7 +295,7 @@ DevServices</string>
         <!--Novo Serviço-->
         <scene sceneID="3ce-j4-w06">
             <objects>
-                <viewController id="WgK-tW-HDn" customClass="SelectDateViewController" customModule="PoliServices" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WgK-tW-HDn" customClass="SelectServiceDateViewController" customModule="PoliServices" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0e-cy-M55">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -325,7 +325,7 @@ DevServices</string>
                     <navigationItem key="navigationItem" title="Novo Serviço" largeTitleDisplayMode="always" id="Bdx-8Z-kKa">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="LeN-Q2-61q">
                             <connections>
-                                <action selector="clicou:" destination="WgK-tW-HDn" id="Bcy-of-2zA"/>
+                                <action selector="createNewService:" destination="WgK-tW-HDn" id="AtH-eJ-ygH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
