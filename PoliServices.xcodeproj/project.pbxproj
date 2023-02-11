@@ -18,7 +18,7 @@
 		4C5503592937D32A00699589 /* NewServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5503582937D32A00699589 /* NewServiceViewController.swift */; };
 		936404B929979C8200031C7A /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404B829979C8200031C7A /* DataStore.swift */; };
 		936404BC2997A79200031C7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404BB2997A79200031C7A /* Constants.swift */; };
-		936404C22997AA5A00031C7A /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404C12997AA5A00031C7A /* ServiceModel.swift */; };
+		936404C22997AA5A00031C7A /* SelectedServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404C12997AA5A00031C7A /* SelectedServiceModel.swift */; };
 		936404C62997AC2700031C7A /* SelectServiceDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404C52997AC2700031C7A /* SelectServiceDateViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		4C5503582937D32A00699589 /* NewServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewServiceViewController.swift; sourceTree = "<group>"; };
 		936404B829979C8200031C7A /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		936404BB2997A79200031C7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		936404C12997AA5A00031C7A /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		936404C12997AA5A00031C7A /* SelectedServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedServiceModel.swift; sourceTree = "<group>"; };
 		936404C52997AC2700031C7A /* SelectServiceDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServiceDateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 		936404BD2997A93A00031C7A /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				936404C12997AA5A00031C7A /* ServiceModel.swift */,
 				936405062997CA1800031C7A /* NewService */,
 				936404C32997AC0400031C7A /* SelectDate */,
 				936404BF2997A9DA00031C7A /* Home */,
@@ -137,6 +136,7 @@
 		936404C32997AC0400031C7A /* SelectDate */ = {
 			isa = PBXGroup;
 			children = (
+				936404C12997AA5A00031C7A /* SelectedServiceModel.swift */,
 				4C30F0A729391842002C3068 /* SelectServiceDateViewController.swift */,
 				936404C52997AC2700031C7A /* SelectServiceDateViewModel.swift */,
 			);
@@ -227,7 +227,7 @@
 				936404C62997AC2700031C7A /* SelectServiceDateViewModel.swift in Sources */,
 				936404B929979C8200031C7A /* DataStore.swift in Sources */,
 				4C30F0A829391842002C3068 /* SelectServiceDateViewController.swift in Sources */,
-				936404C22997AA5A00031C7A /* ServiceModel.swift in Sources */,
+				936404C22997AA5A00031C7A /* SelectedServiceModel.swift in Sources */,
 				4C30F0A629390FC6002C3068 /* ServiceCollectionViewCell.swift in Sources */,
 				4C55034929379F3600699589 /* ViewController.swift in Sources */,
 				4C55034529379F3600699589 /* AppDelegate.swift in Sources */,
