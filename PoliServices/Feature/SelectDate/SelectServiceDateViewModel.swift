@@ -9,8 +9,9 @@ final class SelectServiceDateViewModel: SelectServiceDateViewModelProtocol {
     private let dataStore = DataStore.shared
     
     func saveNewService(with name: String?, and date: Double) {
-        dataStore.save(name, forKey: Constants.serviceName.rawValue)
-        dataStore.save(date, forKey: Constants.serviceDate.rawValue)
+        let service = Service(name: name, date: date)
+        dataStore.save(service.name, forKey: Constants.serviceName.rawValue)
+        dataStore.save(service.date, forKey: Constants.serviceDate.rawValue)
     }
     
     func selectDate() -> Date {
