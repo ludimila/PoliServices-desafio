@@ -16,6 +16,10 @@
 		4C55034E29379F3900699589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C55034D29379F3900699589 /* Assets.xcassets */; };
 		4C55035129379F3900699589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C55034F29379F3900699589 /* LaunchScreen.storyboard */; };
 		4C5503592937D32A00699589 /* NovoServicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5503582937D32A00699589 /* NovoServicoViewController.swift */; };
+		936404B929979C8200031C7A /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404B829979C8200031C7A /* DataStore.swift */; };
+		936404BC2997A79200031C7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404BB2997A79200031C7A /* Constants.swift */; };
+		936404C22997AA5A00031C7A /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404C12997AA5A00031C7A /* ServiceModel.swift */; };
+		936404C62997AC2700031C7A /* SelectServiceDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936404C52997AC2700031C7A /* SelectServiceDateViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		4C55035029379F3900699589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C55035229379F3900699589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5503582937D32A00699589 /* NovoServicoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoServicoViewController.swift; sourceTree = "<group>"; };
+		936404B829979C8200031C7A /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		936404BB2997A79200031C7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		936404C12997AA5A00031C7A /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		936404C52997AC2700031C7A /* SelectServiceDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServiceDateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +72,76 @@
 			children = (
 				4C55034429379F3600699589 /* AppDelegate.swift */,
 				4C55034629379F3600699589 /* SceneDelegate.swift */,
-				4C55034829379F3600699589 /* ViewController.swift */,
 				4C55034A29379F3600699589 /* Main.storyboard */,
-				4C30F0A729391842002C3068 /* SelectDateViewController.swift */,
-				4C55034D29379F3900699589 /* Assets.xcassets */,
 				4C55034F29379F3900699589 /* LaunchScreen.storyboard */,
 				4C55035229379F3900699589 /* Info.plist */,
-				4C5503582937D32A00699589 /* NovoServicoViewController.swift */,
-				4C30F0A529390FC6002C3068 /* ServiceCollectionViewCell.swift */,
+				936404BE2997A96F00031C7A /* Resources */,
+				936404BD2997A93A00031C7A /* Feature */,
+				936404BA2997A77900031C7A /* Commom */,
 			);
 			path = PoliServices;
+			sourceTree = "<group>";
+		};
+		936404B729979C4900031C7A /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				936404B829979C8200031C7A /* DataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		936404BA2997A77900031C7A /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				936404C02997A9F400031C7A /* Service */,
+				936404B729979C4900031C7A /* DataStore */,
+				936404BB2997A79200031C7A /* Constants.swift */,
+			);
+			path = Commom;
+			sourceTree = "<group>";
+		};
+		936404BD2997A93A00031C7A /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				936404C32997AC0400031C7A /* SelectDate */,
+				936404BF2997A9DA00031C7A /* Home */,
+				4C30F0A529390FC6002C3068 /* ServiceCollectionViewCell.swift */,
+				4C5503582937D32A00699589 /* NovoServicoViewController.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		936404BE2997A96F00031C7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C55034D29379F3900699589 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		936404BF2997A9DA00031C7A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4C55034829379F3600699589 /* ViewController.swift */,
+				936404C12997AA5A00031C7A /* ServiceModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		936404C02997A9F400031C7A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		936404C32997AC0400031C7A /* SelectDate */ = {
+			isa = PBXGroup;
+			children = (
+				4C30F0A729391842002C3068 /* SelectDateViewController.swift */,
+				936404C52997AC2700031C7A /* SelectServiceDateViewModel.swift */,
+			);
+			path = SelectDate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,12 +216,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936404C62997AC2700031C7A /* SelectServiceDateViewModel.swift in Sources */,
+				936404B929979C8200031C7A /* DataStore.swift in Sources */,
 				4C30F0A829391842002C3068 /* SelectDateViewController.swift in Sources */,
+				936404C22997AA5A00031C7A /* ServiceModel.swift in Sources */,
 				4C30F0A629390FC6002C3068 /* ServiceCollectionViewCell.swift in Sources */,
 				4C55034929379F3600699589 /* ViewController.swift in Sources */,
 				4C55034529379F3600699589 /* AppDelegate.swift in Sources */,
 				4C5503592937D32A00699589 /* NovoServicoViewController.swift in Sources */,
 				4C55034729379F3600699589 /* SceneDelegate.swift in Sources */,
+				936404BC2997A79200031C7A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,20 +33,15 @@ class ViewController: UIViewController {
 
     private func setupService() {
         let currentDate = Date()
-        let serviceDateInteger = UserDefaults.standard.integer(forKey: "service_date")
+        let serviceDateInteger = DataStore.shared.retrieveInteger(forKey: Constants.serviceDate.rawValue)
         let serviceDate = Date(timeIntervalSince1970: TimeInterval(serviceDateInteger))
         let hasService = serviceDate >= currentDate
         if hasService {
-            let serviceName = UserDefaults.standard.string(forKey: "service_name")
-
+            let serviceName = DataStore.shared.retrieveString(forKey: Constants.serviceName.rawValue)
             serviceNameLabel.text = serviceName
-            serviceDateLabel.text = serviceDate.formatted(
-                date: .numeric,
-                time: .shortened
-            )
-        }else{
-            UserDefaults.standard.removeObject(forKey: "service_date")
-            UserDefaults.standard.removeObject(forKey: "service_name")
+            serviceDateLabel.text = serviceDate.formatted( date: .numeric,time: .shortened)
+        } else {
+            DataStore.shared.deleteAllObjects()
         }
 
         UIView.animate(withDuration: 0.3) {
@@ -55,11 +50,7 @@ class ViewController: UIViewController {
             self.novoBtn.alpha = hasService ? 0 : 1
             self.novoBtn.isHidden = hasService
         }
-
-        dateLabel.text = currentDate.formatted(
-            date: .long,
-            time: .omitted
-        )
+        dateLabel.text = currentDate.formatted(date: .long, time: .omitted)
     }
 
     @IBAction func onRequestNewServiceDidTap(_ sender: Any) {

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class NovoServiceViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class NewServiceViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -67,7 +67,7 @@ class NovoServiceViewController: UIViewController, UICollectionViewDelegate, UIC
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        (segue.destination as! SelectDateViewController).servico = nome
+        (segue.destination as! SelectDateViewController).serviceName = nome
     }
 
 }

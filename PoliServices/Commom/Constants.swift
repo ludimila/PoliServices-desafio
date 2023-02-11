@@ -1,8 +1,6 @@
-//
-//  Constants.swift
-//  PoliServices
-//
-//  Created by Ludimila da Bela Cruz on 11/02/23.
-//
-
 import Foundation
+
+enum Constants: String {
+    case serviceDate = "service_date"
+    case serviceName = "service_name"
+}

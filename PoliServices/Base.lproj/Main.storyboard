@@ -203,7 +203,7 @@ DevServices</string>
         <!--Novo Serviço-->
         <scene sceneID="8cy-di-t6U">
             <objects>
-                <viewController id="au7-jG-cNw" customClass="NovoServiceViewController" customModule="PoliServices" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="au7-jG-cNw" customClass="NewServiceViewController" customModule="PoliServices" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z3q-ce-TL4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

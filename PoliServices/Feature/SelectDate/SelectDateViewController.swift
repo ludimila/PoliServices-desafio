@@ -13,17 +13,22 @@ class SelectDateViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var salvar: UIBarButtonItem!
 
-    var servico: String?
-
+    var serviceName: String?
+    var viewModel = SelectServiceDateViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+    }
+    
+    private func setup() {
         datePicker.minimumDate = Date()
-        datePicker.date = Calendar.current.date(byAdding: .minute, value: 1, to: Date()) ?? Date()
+        datePicker.date = viewModel.selectDate()
     }
 
     @IBAction func clicou(_ sender: Any) {
-        UserDefaults.standard.set(datePicker.date.timeIntervalSince1970, forKey: "service_date")
-        UserDefaults.standard.set(servico, forKey: "service_name")
+        let date = datePicker.date.timeIntervalSince1970
+        viewModel.saveNewService(with: serviceName, and: datePicker.date.timeIntervalSince1970)
         dismiss(animated: true)
     }
 
